@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* Coolors Exported Palette - coolors.co/ed6a5a-f4f1bb-9bc1bc-5d576b-e6ebe0 */
+/* RGB */
+body {
+  background: linear-gradient(135deg, #e6ebe0 40%, #9bc1bc);
+  color: #5d576b;
+  display: flex;
+  height: 100vh; }
+
+.box {
+  border: 5px solid #5d576b;
+  margin: 20vh auto auto;
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap; }
+  @media (max-width: 700px) {
+    .box {
+      border: 0;
+      margin: 0;
+      width: 100%; } }
+
+.box-bar {
+  background-color: #ed6a5a;
+  border-bottom: 3px solid #5d576b;
+  display: flex;
+  align-items: center; }
+  .box-bar .box-bar-title {
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: auto; }
+  .box-bar button {
+    background-color: inherit;
+    color: inherit;
+    border: 0;
+    height: 30px;
+    cursor: pointer; }
+    .box-bar button:hover {
+      background-color: #9bc1bc;
+      color: #e6ebe0; }
+
+.box-body {
+  background-color: #f4f1bb;
+  padding: 0 10px; }
+  @media (max-width: 700px) {
+    .box-body {
+      height: 100%; } }
+  .box-body .box-body-quote {
+    font-size: 1.8em; }
+    .box-body .box-body-quote::before {
+      content: open-quote; }
+    .box-body .box-body-quote::after {
+      content: close-quote; }
+  .box-body .box-body-author {
+    font-style: italic; }
+    .box-body .box-body-author::before {
+      content: "— @"; }
+  .box-body p:last-child {
+    text-align: right; }
+  .box-body .box-body-link {
+    font-size: 0.7em; }
+    .box-body .box-body-link::before {
+      content: "("; }
+    .box-body .box-body-link::after {
+      content: ")"; }
