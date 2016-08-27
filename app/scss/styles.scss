@@ -1,0 +1,90 @@
+@import "colors";
+
+body {
+  background: linear-gradient(135deg, $platinum 40%, $cambridge-blue);
+  color: $black-coral;
+  
+  display: flex;
+  height: 100vh;
+}
+
+.box {
+  border: 5px solid $black-coral;
+  margin: 20vh auto auto;
+  width: 50%;
+  
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.box-bar {
+  background-color: $terra-cotta;
+  border-bottom: 3px solid $black-coral;
+  display: flex;
+  align-items: center;
+  
+  .box-bar-title {
+    font-weight: bold;
+    
+    margin : {
+      left: 5px;
+      right: auto;
+    }
+  }
+  
+  button {
+    background-color: inherit;
+    color: inherit;
+    
+    border: 0;
+    height: 30px;
+    
+    cursor: pointer;
+    
+    &:hover {
+      background-color: $cambridge-blue;
+      color: $platinum;
+    }
+  }
+}
+
+.box-body {
+  background-color: $blond;
+  padding: 0 10px;
+  
+  .box-body-quote {
+    font-size: 1.8em;
+    
+    &::before {
+      content: open-quote;
+    }
+    
+    &::after {
+      content: close-quote;
+    }
+  }
+  
+  .box-body-author {
+    font-style: italic;
+    
+    &::before {
+      content: "— @"
+    }
+  }
+  
+  p:last-child {
+    text-align: right;
+  }
+  
+  .box-body-link {
+    font-size: 0.7em;
+    
+    &::before {
+      content: "(";
+    }
+    
+    &::after {
+      content: ")";
+    }
+  }
+}
