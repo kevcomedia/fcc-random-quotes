@@ -2,13 +2,29 @@
 <html lang="en">
 
 <head>
-  <title></title>
+  <title>Random Quote Box</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
-  
+  <div class="box">
+    <div class="box-bar">
+      <span class="fa fa-quote-left fa-lg fa-fw"></span>
+      <span class="box-bar-title">Random Quote Box</span>
+      <button id="newQuote" class="box-bar-newQuote"><span class="fa fa-refresh fa-lg fa-fw"></span></button>
+      <button id="tweet" class="box-bar-tweet"><span class="fa fa-twitter fa-lg fa-fw"></span></button>
+    </div>
+    <div class="box-body">
+      <p id="quote" class="box-body-quote"></p>
+      <p>
+        <span id="author" class="box-body-author"></span>
+        <a href="#" id="link" class="box-body-link"></a>
+      </p>
+    </div>
+  </div>
 </body>
 
 </html>
