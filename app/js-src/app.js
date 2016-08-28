@@ -60,5 +60,7 @@ function renderQuote() {
 window.onload = event => renderQuote();
 document.getElementById("newQuote").onclick = event => renderQuote();
 document.getElementById("tweet").onclick = function tweet() {
-  // TODO write tweet code
+  "use strict";
+  let { quote, author } = quotes.getCurrent();
+  window.open(`https://twitter.com/intent/tweet?text=${quote} —${author}`);
 }
