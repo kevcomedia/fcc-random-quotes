@@ -1,0 +1,103 @@
+@import "colors";
+@import "mixins";
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(135deg, $platinum 40%, $cambridge-blue);
+  color: $black-coral;
+
+  display: flex;
+  height: 100vh;
+}
+
+.box {
+  border: 5px solid $black-coral;
+  margin: 20vh auto auto;
+  width: 50%;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  @include breakpoint(mobile) {
+    border: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.box-bar {
+  background-color: $terra-cotta;
+  border-bottom: 3px solid $black-coral;
+  display: flex;
+  align-items: center;
+
+  .box-bar-title {
+    font-weight: 700;
+    margin : {
+      left: 5px;
+      right: auto;
+    }
+  }
+
+  button {
+    background-color: inherit;
+    color: inherit;
+    border: 0;
+    height: 30px;
+    cursor: pointer;
+
+    @include breakpoint(mobile) {
+      height: 40px;
+    }
+
+    &:hover {
+      background-color: $cambridge-blue;
+      color: $platinum;
+    }
+  }
+}
+
+.box-body {
+  background-color: $blond;
+  padding: 0 10px;
+
+  @include breakpoint(mobile) {
+    height: 100%;
+  }
+
+  .box-body-quote {
+    font-size: 1.7em;
+
+    &::before {
+      content: open-quote;
+    }
+
+    &::after {
+      content: close-quote;
+    }
+  }
+
+  .box-body-author {
+    font-style: italic;
+
+    &::before {
+      content: "— @"
+    }
+  }
+
+  p:last-child {
+    text-align: right;
+  }
+
+  .box-body-link {
+    font-size: 0.7em;
+
+    &::before {
+      content: "(";
+    }
+
+    &::after {
+      content: ")";
+    }
+  }
+}
