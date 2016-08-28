@@ -2,6 +2,7 @@
 /* Coolors Exported Palette - coolors.co/ed6a5a-f4f1bb-9bc1bc-5d576b-e6ebe0 */
 /* RGB */
 body {
+  font-family: 'Raleway', sans-serif;
   background: linear-gradient(135deg, #e6ebe0 40%, #9bc1bc);
   color: #5d576b;
   display: flex;
@@ -25,7 +26,7 @@ body {
   display: flex;
   align-items: center; }
   .box-bar .box-bar-title {
-    font-weight: bold;
+    font-weight: 700;
     margin-left: 5px;
     margin-right: auto; }
   .box-bar button {
@@ -48,7 +49,7 @@ body {
     .box-body {
       height: 100%; } }
   .box-body .box-body-quote {
-    font-size: 1.8em; }
+    font-size: 1.7em; }
     .box-body .box-body-quote::before {
       content: open-quote; }
     .box-body .box-body-quote::after {

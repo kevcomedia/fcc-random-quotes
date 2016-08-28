@@ -2,6 +2,7 @@
 @import "mixins";
 
 body {
+  font-family: 'Raleway', sans-serif;
   background: linear-gradient(135deg, $platinum 40%, $cambridge-blue);
   color: $black-coral;
 
@@ -31,7 +32,7 @@ body {
   align-items: center;
 
   .box-bar-title {
-    font-weight: bold;
+    font-weight: 700;
     margin : {
       left: 5px;
       right: auto;
@@ -65,7 +66,7 @@ body {
   }
 
   .box-body-quote {
-    font-size: 1.8em;
+    font-size: 1.7em;
 
     &::before {
       content: open-quote;
